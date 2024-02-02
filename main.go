@@ -79,7 +79,7 @@ func main() {
 	//}
 
 	// Start the server on port 8080
-	addr = ":8080"
+	addr := ":8080"
 	log.Info("Staring server", "addr", addr)
 	err := http.ListenAndServe(addr, nil)
 	if err != nil {
