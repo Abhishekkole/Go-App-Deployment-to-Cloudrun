@@ -2,8 +2,6 @@ FROM golang:latest
 WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
-COPY *.go ./
-RUN go build -o main .
+COPY . .
+CMD ["go", "run", "main.go"]
 EXPOSE 8080
-RUN chmod +x ./main.go
-RUN [ "./main.go"]
