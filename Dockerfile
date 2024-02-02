@@ -5,5 +5,5 @@ RUN go mod download
 COPY *.go ./
 RUN go build -o main .
 EXPOSE 8080
-RUN sudo chmod +x ./main.go
+RUN chmod +x ./main.go
 RUN [ "./main.go"]
