@@ -6,7 +6,7 @@ on:
 #Environment Variables
 env:
   PROJECT_ID: driven-park-410307                                     #Google Cloud project id
-  GAR_LOCATION: us-central1-docker.pkg.dev/driven-park-410307/  #Artifact Registry location
+  GAR_LOCATION: us-central1-docker.pkg.dev/driven-park-410307  #Artifact Registry location
   REPOSITORY: hello                                                  #Artifact Registry repository name
   SERVICE: go-app                                                     #Cloud Run service name
   REGION: us-central1                                                #Region Name, where Cloud Run service needs to be deployed.
