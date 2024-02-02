@@ -73,12 +73,13 @@ func main() {
 	// Register Prometheus endpoint
 	http.Handle("/metrics", promhttp.Handler())
 
-	addr := os.Getenv("HOST_ADDR")
-	if addr == "" {
-		addr = "localhost:8080"
-	}
+	//addr := os.Getenv("HOST_ADDR")
+	//if addr == "" {
+		//addr = "localhost:8080"
+	//}
 
 	// Start the server on port 8080
+	addr = ":8080"
 	log.Info("Staring server", "addr", addr)
 	err := http.ListenAndServe(addr, nil)
 	if err != nil {
